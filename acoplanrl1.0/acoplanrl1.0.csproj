@@ -479,6 +479,7 @@
     <Content Include="js\owl.carousel.js" />
     <Content Include="js\superfish.min.js" />
     <Content Include="login.aspx" />
+    <Content Include="registo_usu.aspx" />
     <Content Include="registroUsu.aspx" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
@@ -524,6 +525,13 @@
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registo_usu.aspx.cs">
+      <DependentUpon>registo_usu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registo_usu.aspx.designer.cs">
+      <DependentUpon>registo_usu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="registroUsu.aspx.cs">
       <DependentUpon>registroUsu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
