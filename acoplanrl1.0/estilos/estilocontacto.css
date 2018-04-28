@@ -1,0 +1,82 @@
+body
+        {
+            color:white;
+            font-size:17px;
+            font-family:Arial;
+        }
+
+        table
+        {
+            margin:auto;
+        }
+
+        .mensa
+        {
+            max-height: 190px;
+            max-width: 420px;
+            min-height: 190px;
+            min-width: 420px;
+        }
+
+        .titulo_contacto
+           {
+            
+            width:434px;                 
+            text-align:center;
+            background-color:#159cf6;            
+            -webkit-border-top-left-radius: 10px;
+            -webkit-border-top-right-radius: 10px;
+            -moz-border-radius-topleft: 10px;
+            -moz-border-radius-topright: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+
+        .contacto_tabla
+        {
+            border:0.2px solid #159cf6;
+            background-color:#808080;            
+            height: 205px;
+            width: 402px;
+            -webkit-border-bottom-right-radius: 10px;
+            -webkit-border-bottom-left-radius: 10px;
+            -moz-border-radius-bottomright: 10px;
+            -moz-border-radius-bottomleft: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+               
+        .btncontacto
+        {
+            border-style: inherit;
+            border-color: inherit;
+            border-width: inherit;
+            color:white;
+            font-family:Arial;
+            background-color:#159cf6;
+            padding:8px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            cursor:pointer;
+            width: 130px;
+        }
+
+        .btncontacto:active
+        {
+            background-color:#42abf1;
+        }                 
+                
+        
+         .auto-style2
+        {
+            width: 287px;
+            height: 69px;
+        }
+        .auto-style3 
+        {
+            width: 287px;
+            height: 30px;
+        }

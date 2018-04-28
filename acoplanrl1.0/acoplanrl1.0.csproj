@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{71A88431-8A0A-49B1-9065-22CAFDF96D4C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>acoplanrl1._0</RootNamespace>
+    <AssemblyName>acoplanrl1.0</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="conexion.aspx" />
+    <Content Include="estilos\admin.css" />
+    <Content Include="estilos\baner.css" />
+    <Content Include="estilos\bootstrap.css" />
+    <Content Include="estilos\bootstrap.min.css" />
+    <Content Include="estilos\btncotizar.css" />
+    <Content Include="estilos\BUTTONS.PNG" />
+    <Content Include="estilos\craftyslide.css" />
+    <Content Include="estilos\estilo.css" />
+    <Content Include="estilos\estilocontacto.css" />
+    <Content Include="estilos\estiloimagenes.css" />
+    <Content Include="estilos\estilologin.css" />
+    <Content Include="estilos\estilomenu.css" />
+    <Content Include="estilos\estiloregistro.css" />
+    <Content Include="estilos\form.css" />
+    <Content Include="estilos\LOADING.GIF" />
+    <Content Include="estilos\mecat.css" />
+    <Content Include="estilos\metro-bootstrap.css" />
+    <Content Include="estilos\orangebox.css" />
+    <Content Include="estilos\productos.css" />
+    <Content Include="estilos\search-icon.png" />
+    <Content Include="estilos\search-icon_files\3d-css3-150x150.jpg" />
+    <Content Include="estilos\search-icon_files\3d-css3.jpg" />
+    <Content Include="estilos\search-icon_files\7r8gQb8MIqE.htm" />
+    <Content Include="estilos\search-icon_files\7r8gQb8MIqE_002.htm" />
+    <Content Include="estilos\search-icon_files\a.htm" />
+    <Content Include="estilos\search-icon_files\a5-html5-animator-150x150.png" />
+    <Content Include="estilos\search-icon_files\all.js" />
+    <Content Include="estilos\search-icon_files\all_002.js" />
+    <Content Include="estilos\search-icon_files\analytics.js" />
+    <Content Include="estilos\search-icon_files\animacion-css3-150x150.jpg" />
+    <Content Include="estilos\search-icon_files\a_002.htm" />
+    <Content Include="estilos\search-icon_files\a_data\common.js" />
+    <Content Include="estilos\search-icon_files\a_data\config.js" />
+    <Content Include="estilos\search-icon_files\a_data\discovery.css" />
+    <Content Include="estilos\search-icon_files\a_data\discovery.js" />
+    <Content Include="estilos\search-icon_files\a_data\event.js" />
+    <Content Include="estilos\search-icon_files\a_data\event_002.js" />
+    <Content Include="estilos\search-icon_files\a_data\event_003.js" />
+    <Content Include="estilos\search-icon_files\a_data\ga.js" />
+    <Content Include="estilos\search-icon_files\a_data\lounge.css" />
+    <Content Include="estilos\search-icon_files\a_data\lounge.js" />
+    <Content Include="estilos\search-icon_files\a_data\lounge_002.js" />
+    <Content Include="estilos\search-icon_files\a_data\noavatar92.png" />
+    <Content Include="estilos\search-icon_files\ca-pub-1304435106140369.js" />
+    <Content Include="estilos\search-icon_files\comment-reply.js" />
+    <Content Include="estilos\search-icon_files\corrector-ortografico-sublime-text-espanol-diccionario-65x50.jpg" />
+    <Content Include="estilos\search-icon_files\css.css" />
+    <Content Include="estilos\search-icon_files\css3-animated-dropdown-menu.jpg" />
+    <Content Include="estilos\search-icon_files\customscript.js" />
+    <Content Include="estilos\search-icon_files\disqus.js" />
+    <Content Include="estilos\search-icon_files\embed.js" />
+    <Content Include="estilos\search-icon_files\facebook.png" />
+    <Content Include="estilos\search-icon_files\fastbutton.htm" />
+    <Content Include="estilos\search-icon_files\fastbutton_data\rsAGLTcCPGgGTiXXVUzLWgSOItDf569Y4X7A.css" />
+    <Content Include="estilos\search-icon_files\free-photoshop-actions-portraits-65x50.jpg" />
+    <Content Include="estilos\search-icon_files\in.js" />
+    <Content Include="estilos\search-icon_files\jquery-ui.js" />
+    <Content Include="estilos\search-icon_files\jquery.js" />
+    <Content Include="estilos\search-icon_files\jquery_002.js" />
+    <Content Include="estilos\search-icon_files\jquery_003.js" />
+    <Content Include="estilos\search-icon_files\jquery_004.js" />
+    <Content Include="estilos\search-icon_files\libro-jquery-300x131.jpg" />
+    <Content Include="estilos\search-icon_files\like.htm" />
+    <Content Include="estilos\search-icon_files\likebox.htm" />
+    <Content Include="estilos\search-icon_files\likebox_data\0h8hXjXhuvN.js" />
+    <Content Include="estilos\search-icon_files\likebox_data\10153784_650732358359114_6524648150452480616_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\10176004_727057810647707_133991529115120609_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\10413362_942723112420708_7956862271916266792_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\10435614_809033242490300_7751912095684135748_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\1043856_648689561826981_926097109_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\10462824_664946620289209_4281450943413593148_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\10473062_1498258967124756_493418489271449390_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\10500550_823133204373500_6357758851066339255_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\10639633_829593733727447_5744593245659958602_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\10689656_765784456817793_5575439087075952469_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\10698424_428686807280383_8068881088588221913_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\10704029_10204929568224368_4162932995279160529_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\14275_10152853233894483_756921030482650536_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\1544989_10152582056572023_1339721152198557320_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\1610815_897031486975751_7312541401568728559_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\1911705_798767210137546_1096406519_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\25652_1383337667239_5366263_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\376589_504364509589518_553883775_n.jpg" />
+    <Content Include="estilos\search-icon_files\likebox_data\GsNJNwuI-UM.gif" />
+    <Content Include="estilos\search-icon_files\likebox_data\safe_image.jpg" />
+    <Content Include="estilos\search-icon_files\like_002.htm" />
+    <Content Include="estilos\search-icon_files\like_data_002\10599239_559471637508324_6718139766205770539_n.jpg" />
+    <Content Include="estilos\search-icon_files\loader.js" />
+    <Content Include="estilos\search-icon_files\logo-neothek.jpg" />
+    <Content Include="estilos\search-icon_files\logo.png" />
+    <Content Include="estilos\search-icon_files\menu-basico-150x150.jpg" />
+    <Content Include="estilos\search-icon_files\modernizr.js" />
+    <Content Include="estilos\search-icon_files\my.js" />
+    <Content Include="estilos\search-icon_files\obtener-asignar-jquery-65x50.png" />
+    <Content Include="estilos\search-icon_files\ocultar-html-php-65x50.jpg" />
+    <Content Include="estilos\search-icon_files\plusone.js" />
+    <Content Include="estilos\search-icon_files\postmessageRelay.htm" />
+    <Content Include="estilos\search-icon_files\postmessageRelay_data\35381022-postmessagerelay.js" />
+    <Content Include="estilos\search-icon_files\postmessageRelay_data\api.js" />
+    <Content Include="estilos\search-icon_files\postmessageRelay_data\corerpcshindig.js" />
+    <Content Include="estilos\search-icon_files\prefixfree.js" />
+    <Content Include="estilos\search-icon_files\responsive-design-150x150.jpg" />
+    <Content Include="estilos\search-icon_files\Responsive-Lightbox-modal-Popup-011-150x150.jpg" />
+    <Content Include="estilos\search-icon_files\rss.png" />
+    <Content Include="estilos\search-icon_files\scripts.js" />
+    <Content Include="estilos\search-icon_files\share_button.htm" />
+    <Content Include="estilos\search-icon_files\share_button_data\C2C9Zbg04Wz.js" />
+    <Content Include="estilos\search-icon_files\shBrushCss.js" />
+    <Content Include="estilos\search-icon_files\shBrushXml.js" />
+    <Content Include="estilos\search-icon_files\shCore.js" />
+    <Content Include="estilos\search-icon_files\show_ads.js" />
+    <Content Include="estilos\search-icon_files\Sin-ttulo-1-300x214.png" />
+    <Content Include="estilos\search-icon_files\Sin-ttulo-1-65x50.png" />
+    <Content Include="estilos\search-icon_files\tweet_button.htm" />
+    <Content Include="estilos\search-icon_files\twitter.png" />
+    <Content Include="estilos\search-icon_files\upprev.js" />
+    <Content Include="estilos\search-icon_files\ventana-modal-con-css3-150x150.jpg" />
+    <Content Include="estilos\search-icon_files\ventana-modal-con-css3.jpg" />
+    <Content Include="estilos\search-icon_files\whatsapp-doble-check-palomita-65x50.jpg" />
+    <Content Include="estilos\search-icon_files\widgets.js" />
+    <Content Include="estilos\search-icon_files\wpmls-edu-theme-65x50.jpg" />
+    <Content Include="estilos\tabla.css" />
+    <Content Include="fpdf\changelog.htm" />
+    <Content Include="fpdf\doc\acceptpagebreak.htm" />
+    <Content Include="fpdf\doc\addfont.htm" />
+    <Content Include="fpdf\doc\addlink.htm" />
+    <Content Include="fpdf\doc\addpage.htm" />
+    <Content Include="fpdf\doc\aliasnbpages.htm" />
+    <Content Include="fpdf\doc\cell.htm" />
+    <Content Include="fpdf\doc\close.htm" />
+    <Content Include="fpdf\doc\error.htm" />
+    <Content Include="fpdf\doc\footer.htm" />
+    <Content Include="fpdf\doc\fpdf.htm" />
+    <Content Include="fpdf\doc\getstringwidth.htm" />
+    <Content Include="fpdf\doc\getx.htm" />
+    <Content Include="fpdf\doc\gety.htm" />
+    <Content Include="fpdf\doc\header.htm" />
+    <Content Include="fpdf\doc\image.htm" />
+    <Content Include="fpdf\doc\index.htm" />
+    <Content Include="fpdf\doc\line.htm" />
+    <Content Include="fpdf\doc\link.htm" />
+    <Content Include="fpdf\doc\ln.htm" />
+    <Content Include="fpdf\doc\multicell.htm" />
+    <Content Include="fpdf\doc\output.htm" />
+    <Content Include="fpdf\doc\pageno.htm" />
+    <Content Include="fpdf\doc\rect.htm" />
+    <Content Include="fpdf\doc\setauthor.htm" />
+    <Content Include="fpdf\doc\setautopagebreak.htm" />
+    <Content Include="fpdf\doc\setcompression.htm" />
+    <Content Include="fpdf\doc\setcreator.htm" />
+    <Content Include="fpdf\doc\setdisplaymode.htm" />
+    <Content Include="fpdf\doc\setdrawcolor.htm" />
+    <Content Include="fpdf\doc\setfillcolor.htm" />
+    <Content Include="fpdf\doc\setfont.htm" />
+    <Content Include="fpdf\doc\setfontsize.htm" />
+    <Content Include="fpdf\doc\setkeywords.htm" />
+    <Content Include="fpdf\doc\setleftmargin.htm" />
+    <Content Include="fpdf\doc\setlinewidth.htm" />
+    <Content Include="fpdf\doc\setlink.htm" />
+    <Content Include="fpdf\doc\setmargins.htm" />
+    <Content Include="fpdf\doc\setrightmargin.htm" />
+    <Content Include="fpdf\doc\setsubject.htm" />
+    <Content Include="fpdf\doc\settextcolor.htm" />
+    <Content Include="fpdf\doc\settitle.htm" />
+    <Content Include="fpdf\doc\settopmargin.htm" />
+    <Content Include="fpdf\doc\setx.htm" />
+    <Content Include="fpdf\doc\setxy.htm" />
+    <Content Include="fpdf\doc\sety.htm" />
+    <Content Include="fpdf\doc\text.htm" />
+    <Content Include="fpdf\doc\write.htm" />
+    <Content Include="fpdf\FAQ.htm" />
+    <Content Include="fpdf\fpdf.css" />
+    <Content Include="fpdf\install.txt" />
+    <Content Include="fpdf\license.txt" />
+    <Content Include="fpdf\tutorial\20k_c1.txt" />
+    <Content Include="fpdf\tutorial\20k_c2.txt" />
+    <Content Include="fpdf\tutorial\countries.txt" />
+    <Content Include="fpdf\tutorial\index.htm" />
+    <Content Include="fpdf\tutorial\logo.png" />
+    <Content Include="fpdf\tutorial\tuto1.htm" />
+    <Content Include="fpdf\tutorial\tuto2.htm" />
+    <Content Include="fpdf\tutorial\tuto3.htm" />
+    <Content Include="fpdf\tutorial\tuto4.htm" />
+    <Content Include="fpdf\tutorial\tuto5.htm" />
+    <Content Include="fpdf\tutorial\tuto6.htm" />
+    <Content Include="fpdf\tutorial\tuto7.htm" />
+    <Content Include="imagenes\1 accesorios\1.jpg" />
+    <Content Include="imagenes\1 accesorios\2.jpg" />
+    <Content Include="imagenes\1 accesorios\3.jpg" />
+    <Content Include="imagenes\1 accesorios\4.jpg" />
+    <Content Include="imagenes\1 accesorios\5.jpg" />
+    <Content Include="imagenes\1 accesorios\benq.jpg" />
+    <Content Include="imagenes\1 accesorios\boci.jpg" />
+    <Content Include="imagenes\1 accesorios\bocieste.jpg" />
+    <Content Include="imagenes\1 accesorios\bocin.jpg" />
+    <Content Include="imagenes\1 accesorios\bocina6w.jpg" />
+    <Content Include="imagenes\1 accesorios\bocinas.jpg" />
+    <Content Include="imagenes\1 accesorios\epson.jpg" />
+    <Content Include="imagenes\1 accesorios\gamer.jpg" />
+    <Content Include="imagenes\1 accesorios\gm.jpg" />
+    <Content Include="imagenes\1 accesorios\Mad.jpg" />
+    <Content Include="imagenes\1 accesorios\minimouse.jpg" />
+    <Content Include="imagenes\1 accesorios\mou.jpg" />
+    <Content Include="imagenes\1 accesorios\mous.jpg" />
+    <Content Include="imagenes\1 accesorios\mouse1.jpg" />
+    <Content Include="imagenes\1 accesorios\mouse_.jpg" />
+    <Content Include="imagenes\1 accesorios\philips.jpg" />
+    <Content Include="imagenes\1 accesorios\pro.jpg" />
+    <Content Include="imagenes\1 accesorios\rosa.jpg" />
+    <Content Include="imagenes\1 accesorios\samsung-a800.jpg" />
+    <Content Include="imagenes\1 accesorios\sony.jpg" />
+    <Content Include="imagenes\1 accesorios\web1.0.jpg" />
+    <Content Include="imagenes\1 accesorios\web2.0.jpg" />
+    <Content Include="imagenes\1 accesorios\web3.0.jpg" />
+    <Content Include="imagenes\1 accesorios\web4.0.jpg" />
+    <Content Include="imagenes\1 accesorios\web5.0.jpg" />
+    <Content Include="imagenes\2 monitores\1.jpg" />
+    <Content Include="imagenes\2 monitores\2.jpg" />
+    <Content Include="imagenes\2 monitores\3.jpg" />
+    <Content Include="imagenes\2 monitores\4.jpg" />
+    <Content Include="imagenes\2 monitores\5.jpg" />
+    <Content Include="imagenes\3 impresoras\im.jpg" />
+    <Content Include="imagenes\3 impresoras\imp.jpg" />
+    <Content Include="imagenes\3 impresoras\impren.jpg" />
+    <Content Include="imagenes\3 impresoras\impreso.jpg" />
+    <Content Include="imagenes\4 reguladores\cdp.jpg" />
+    <Content Include="imagenes\4 reguladores\coolermasterGX550W-3.jpg" />
+    <Content Include="imagenes\4 reguladores\cyberpower.jpg" />
+    <Content Include="imagenes\4 reguladores\GSP8.jpg" />
+    <Content Include="imagenes\4 reguladores\regula.jpg" />
+    <Content Include="imagenes\4 reguladores\SerieAX.png" />
+    <Content Include="imagenes\4 reguladores\SerieGS.png" />
+    <Content Include="imagenes\4 reguladores\ups.jpg" />
+    <Content Include="imagenes\4 reguladores\upsisonic.jpg" />
+    <Content Include="imagenes\4 reguladores\V850-2.jpg" />
+    <Content Include="imagenes\5 almacenamiento\Kingston  Tarjeta de memoria flash 16GB.jpg" />
+    <Content Include="imagenes\5 almacenamiento\Kingston  Tarjeta de memoria flash 4GB.jpg" />
+    <Content Include="imagenes\5 almacenamiento\Kingston Tarjeta de memoria flash 32GB.jpg" />
+    <Content Include="imagenes\5 almacenamiento\Kingston Tarjeta de memoria flash 8GB.jpg" />
+    <Content Include="imagenes\5 almacenamiento\Kingston UltimateXX  Tarjeta de memoria flash  8 GB.jpg" />
+    <Content Include="imagenes\5 almacenamiento\memoria-usb-16gb.jpg" />
+    <Content Include="imagenes\5 almacenamiento\memorias-usb-de-diseno-1.jpg" />
+    <Content Include="imagenes\5 almacenamiento\usb_kingston.jpg" />
+    <Content Include="imagenes\5 almacenamiento\usb_mouse.jpg" />
+    <Content Include="imagenes\5 almacenamiento\usb_trans.jpg" />
+    <Content Include="imagenes\6 disco duro\Kingston SSDNow V300 60GB.jpg" />
+    <Content Include="imagenes\6 disco duro\Kingston SSDNow V300 Desktop Upgrade Kit 60GB.jpg" />
+    <Content Include="imagenes\6 disco duro\Seagate Barracuda Desktop HDD.15 4TB.jpg" />
+    <Content Include="imagenes\6 disco duro\Seagate Desktop HDD ST3000DM001 3TB.jpg" />
+    <Content Include="imagenes\6 disco duro\WD My Passport Ultra 1TB.jpg" />
+    <Content Include="imagenes\7 motherboard\m1.jpg" />
+    <Content Include="imagenes\7 motherboard\m2.jpg" />
+    <Content Include="imagenes\7 motherboard\m3.jpg" />
+    <Content Include="imagenes\7 motherboard\m4.jpg" />
+    <Content Include="imagenes\7 motherboard\m5.png" />
+    <Content Include="imagenes\8 memoria ram\Dominator.png" />
+    <Content Include="imagenes\8 memoria ram\HyperX Beast.png" />
+    <Content Include="imagenes\8 memoria ram\HyperX FURY.png" />
+    <Content Include="imagenes\8 memoria ram\HyperX Predator.png" />
+    <Content Include="imagenes\8 memoria ram\HyperX Savage.png" />
+    <Content Include="imagenes\9 software\1.jpg" />
+    <Content Include="imagenes\9 software\2.jpg" />
+    <Content Include="imagenes\9 software\3.jpg" />
+    <Content Include="imagenes\9 software\4.jpg" />
+    <Content Include="imagenes\9 software\5.jpg" />
+    <Content Include="imagenes\9 software\Microsoft Office 365 Small Business Premium.jpg" />
+    <Content Include="imagenes\9 software\Microsoft OneNote 2013.jpg" />
+    <Content Include="imagenes\9 software\Microsoft Outlook 2013.jpg" />
+    <Content Include="imagenes\9 software\Microsoft Project Professional 2013.jpg" />
+    <Content Include="imagenes\9 software\Microsoft Visio Standard 2013.jpg" />
+    <Content Include="imagenes\9 software\Microsoft Windows 7 Home Basic.jpg" />
+    <Content Include="imagenes\9 software\Microsoft Windows 7 Professional.jpg" />
+    <Content Include="imagenes\9 software\photoshop.png" />
+    <Content Include="imagenes\9 software\Windows 8 Pro Pack.jpg" />
+    <Content Include="imagenes\9 software\Windows 8.1 Pro.jpg" />
+    <Content Include="imagenes\admi.jpg" />
+    <Content Include="imagenes\alge.jpg" />
+    <Content Include="imagenes\cables\ide.jpg" />
+    <Content Include="imagenes\cables\sata.jpg" />
+    <Content Include="imagenes\cables\svideo.jpg" />
+    <Content Include="imagenes\cables\usb.jpg" />
+    <Content Include="imagenes\cables\vga.jpg" />
+    <Content Include="imagenes\coro.jpg" />
+    <Content Include="imagenes\cuant.jpg" />
+    <Content Include="imagenes\elemen.jpg" />
+    <Content Include="imagenes\embebi.jpg" />
+    <Content Include="imagenes\estructu.jpg" />
+    <Content Include="imagenes\fiisica.jpg" />
+    <Content Include="imagenes\finan.jpg" />
+    <Content Include="imagenes\fisi.jpg" />
+    <Content Include="imagenes\fondo.png" />
+    <Content Include="imagenes\funda.jpg" />
+    <Content Include="imagenes\gavi.jpg" />
+    <Content Include="imagenes\gmma.png" />
+    <Content Include="imagenes\hero.jpg" />
+    <Content Include="imagenes\html5.jpg" />
+    <Content Include="imagenes\icono.jpg" />
+    <Content Include="imagenes\ile.jpg" />
+    <Content Include="imagenes\java.jpg" />
+    <Content Include="imagenes\libro java.jpg" />
+    <Content Include="imagenes\maqui.jpg" />
+    <Content Include="imagenes\merca.jpg" />
+    <Content Include="imagenes\penal.jpg" />
+    <Content Include="imagenes\perfil\-1.jpg" />
+    <Content Include="imagenes\perfil\11236550_409560782562561_4161041589171864724_n.jpg.jpg" />
+    <Content Include="imagenes\perfil\11412105_818268848269281_4393401861276948566_n.jpg" />
+    <Content Include="imagenes\perfil\11703162_1041001555923871_3070272632209879263_n.jpg" />
+    <Content Include="imagenes\perfil\alge.jpg" />
+    <Content Include="imagenes\perfil\cafeina adiccion.jpg" />
+    <Content Include="imagenes\perfil\head-659652_960_720.png" />
+    <Content Include="imagenes\perfil\males_male_avatar_man_people_faces_18306 %281%29.png" />
+    <Content Include="imagenes\perfil\perfil.jpg" />
+    <Content Include="imagenes\perfil\sello 2.png" />
+    <Content Include="imagenes\perfil\sion.jpg" />
+    <Content Include="imagenes\perl.png" />
+    <Content Include="imagenes\plaweb.jpg" />
+    <Content Include="imagenes\portada_planeta.jpg" />
+    <Content Include="imagenes\preuni.jpg" />
+    <Content Include="imagenes\princi.jpg" />
+    <Content Include="imagenes\proce.jpg" />
+    <Content Include="imagenes\python.jpg" />
+    <Content Include="imagenes\quijo.jpg" />
+    <Content Include="imagenes\sfondo.jpg" />
+    <Content Include="imagenes\unive.jpg" />
+    <Content Include="images\0001.jpg" />
+    <Content Include="images\avatar1.jpg" />
+    <Content Include="images\avatar2.jpg" />
+    <Content Include="images\blog\1.jpg" />
+    <Content Include="images\blog\2.jpg" />
+    <Content Include="images\blog\3.jpg" />
+    <Content Include="images\blog\4.jpg" />
+    <Content Include="images\blog\5.jpg" />
+    <Content Include="images\breadcrumbs_bg.jpg" />
+    <Content Include="images\clean_code_bg.jpg" />
+    <Content Include="images\clean_code_bg1.jpg" />
+    <Content Include="images\clean_code_bg3.jpg" />
+    <Content Include="images\clients\1.jpg" />
+    <Content Include="images\clients\2.jpg" />
+    <Content Include="images\clients\3.jpg" />
+    <Content Include="images\clients\4.jpg" />
+    <Content Include="images\clients\5.jpg" />
+    <Content Include="images\clients\6.jpg" />
+    <Content Include="images\construccion\1.jpg" />
+    <Content Include="images\construccion\2.png" />
+    <Content Include="images\construccion\3.jpg" />
+    <Content Include="images\construccion\4.gif" />
+    <Content Include="images\estructura\bloque_arriba.jpg" />
+    <Content Include="images\estructura\bloque_der.jpg" />
+    <Content Include="images\estructura\bloque_izq.jpg" />
+    <Content Include="images\estructura\footers.jpg" />
+    <Content Include="images\estructura\pag-principal.jpg" />
+    <Content Include="images\estructura\pag-principal2.jpg" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\favicon2.ico" />
+    <Content Include="images\i1.png" />
+    <Content Include="images\i2.png" />
+    <Content Include="images\i3.png" />
+    <Content Include="images\i4.png" />
+    <Content Include="images\i5.png" />
+    <Content Include="images\i6.png" />
+    <Content Include="images\img1.png" />
+    <Content Include="images\portfolio\1.jpg" />
+    <Content Include="images\portfolio\1_2.jpg" />
+    <Content Include="images\portfolio\1_3.jpg" />
+    <Content Include="images\portfolio\1_4.jpg" />
+    <Content Include="images\preloader.gif" />
+    <Content Include="images\prettyPhoto\default\loader.gif" />
+    <Content Include="images\prettyPhoto\default\sprite.png" />
+    <Content Include="images\price_arrow.png" />
+    <Content Include="images\slider\1.jpg" />
+    <Content Include="images\slider\caption_img1.png" />
+    <Content Include="images\slider\slide1_bg.jpg" />
+    <Content Include="images\slider\slide1_bg1.jpg" />
+    <Content Include="images\slider\slide2_bg.jpg" />
+    <Content Include="images\slider\slide2_bg2.jpg" />
+    <Content Include="images\slider\slide3_bg.jpg" />
+    <Content Include="images\slider\slide3_bg3.jpg" />
+    <Content Include="images\slider\slide4_bg.jpg" />
+    <Content Include="images\slider\slide5_bg.jpg" />
+    <Content Include="images\slider\slide6_bg.jpg" />
+    <Content Include="images\slider\slide_shadow.png" />
+    <Content Include="images\team\1.jpg" />
+    <Content Include="images\team\2.jpg" />
+    <Content Include="images\team\3.jpg" />
+    <Content Include="images\team\4.jpg" />
+    <Content Include="images\team\5.jpg" />
+    <Content Include="images\team\6.jpg" />
+    <Content Include="images\team\7.jpg" />
+    <Content Include="images\team\8.jpg" />
+    <Content Include="images\team_bg.jpg" />
+    <Content Include="images\video.png" />
+    <Content Include="images\works\1.jpg" />
+    <Content Include="images\works\1_2.jpg" />
+    <Content Include="images\works\2.jpg" />
+    <Content Include="images\works\2_2.jpg" />
+    <Content Include="images\works\3.jpg" />
+    <Content Include="images\works\3_2.jpg" />
+    <Content Include="images\works\4.jpg" />
+    <Content Include="images\works\4_2.jpg" />
+    <Content Include="images\works\5.jpg" />
+    <Content Include="images\works\5_2.jpg" />
+    <Content Include="images\works\6.jpg" />
+    <Content Include="images\works\6_2.jpg" />
+    <Content Include="images\works\7.jpg" />
+    <Content Include="images\works\7_2.jpg" />
+    <Content Include="images\zoom.png" />
+    <Content Include="images\zoom_h.png" />
+    <Content Include="image\header.png" />
+    <Content Include="index.aspx" />
+    <Content Include="indexAdmin.aspx" />
+    <Content Include="js\animate.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.BlackAndWhite.js" />
+    <Content Include="js\jquery.flexslider-min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.nicescroll.min.js" />
+    <Content Include="js\jquery.prettyPhoto.js" />
+    <Content Include="js\myscript.js" />
+    <Content Include="js\owl.carousel.js" />
+    <Content Include="js\superfish.min.js" />
+    <Content Include="login.aspx" />
+    <Content Include="registroUsu.aspx" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\craftyslide.js" />
+    <Content Include="scripts\craftyslide.min.js" />
+    <Content Include="scripts\docs.js" />
+    <Content Include="scripts\jquery-1.6.1.min.js" />
+    <Content Include="scripts\jquery.min.js" />
+    <Content Include="scripts\npm.js" />
+    <Content Include="scripts\orangebox.js" />
+    <Content Include="scripts\orangebox.min.js" />
+    <Content Include="scripts\scriptmenu.js" />
+    <Content Include="scripts\validar.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="conexion.aspx.cs">
+      <DependentUpon>conexion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="conexion.aspx.designer.cs">
+      <DependentUpon>conexion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="indexAdmin.aspx.cs">
+      <DependentUpon>indexAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="indexAdmin.aspx.designer.cs">
+      <DependentUpon>indexAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registroUsu.aspx.cs">
+      <DependentUpon>registroUsu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registroUsu.aspx.designer.cs">
+      <DependentUpon>registroUsu.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="estilos\search-icon_files\cbgapi.loaded_0" />
+    <Content Include="estilos\search-icon_files\cbgapi.loaded_1" />
+    <Content Include="estilos\search-icon_files\secureAnonymousFramework" />
+    <Content Include="estilos\search-icon_files\tweet_button_data\count.json" />
+    <Content Include="fpdf\font\courier.php" />
+    <Content Include="fpdf\font\courierb.php" />
+    <Content Include="fpdf\font\courierbi.php" />
+    <Content Include="fpdf\font\courieri.php" />
+    <Content Include="fpdf\font\helvetica.php" />
+    <Content Include="fpdf\font\helveticab.php" />
+    <Content Include="fpdf\font\helveticabi.php" />
+    <Content Include="fpdf\font\helveticai.php" />
+    <Content Include="fpdf\font\symbol.php" />
+    <Content Include="fpdf\font\times.php" />
+    <Content Include="fpdf\font\timesb.php" />
+    <Content Include="fpdf\font\timesbi.php" />
+    <Content Include="fpdf\font\timesi.php" />
+    <Content Include="fpdf\font\zapfdingbats.php" />
+    <Content Include="fpdf\fpdf.php" />
+    <Content Include="fpdf\makefont\cp1250.map" />
+    <Content Include="fpdf\makefont\cp1251.map" />
+    <Content Include="fpdf\makefont\cp1252.map" />
+    <Content Include="fpdf\makefont\cp1253.map" />
+    <Content Include="fpdf\makefont\cp1254.map" />
+    <Content Include="fpdf\makefont\cp1255.map" />
+    <Content Include="fpdf\makefont\cp1257.map" />
+    <Content Include="fpdf\makefont\cp1258.map" />
+    <Content Include="fpdf\makefont\cp874.map" />
+    <Content Include="fpdf\makefont\iso-8859-1.map" />
+    <Content Include="fpdf\makefont\iso-8859-11.map" />
+    <Content Include="fpdf\makefont\iso-8859-15.map" />
+    <Content Include="fpdf\makefont\iso-8859-16.map" />
+    <Content Include="fpdf\makefont\iso-8859-2.map" />
+    <Content Include="fpdf\makefont\iso-8859-4.map" />
+    <Content Include="fpdf\makefont\iso-8859-5.map" />
+    <Content Include="fpdf\makefont\iso-8859-7.map" />
+    <Content Include="fpdf\makefont\iso-8859-9.map" />
+    <Content Include="fpdf\makefont\koi8-r.map" />
+    <Content Include="fpdf\makefont\koi8-u.map" />
+    <Content Include="fpdf\makefont\makefont.php" />
+    <Content Include="fpdf\makefont\ttfparser.php" />
+    <Content Include="fpdf\tutorial\calligra.php" />
+    <Content Include="fpdf\tutorial\calligra.ttf" />
+    <Content Include="fpdf\tutorial\calligra.z" />
+    <Content Include="fpdf\tutorial\makefont.php" />
+    <Content Include="fpdf\tutorial\tuto1.php" />
+    <Content Include="fpdf\tutorial\tuto2.php" />
+    <Content Include="fpdf\tutorial\tuto3.php" />
+    <Content Include="fpdf\tutorial\tuto4.php" />
+    <Content Include="fpdf\tutorial\tuto5.php" />
+    <Content Include="fpdf\tutorial\tuto6.php" />
+    <Content Include="fpdf\tutorial\tuto7.php" />
+    <Content Include="imagenes\1 accesorios\Thumbs.db" />
+    <Content Include="imagenes\2 monitores\Thumbs.db" />
+    <Content Include="imagenes\3 impresoras\Thumbs.db" />
+    <Content Include="imagenes\4 reguladores\Thumbs.db" />
+    <Content Include="imagenes\5 almacenamiento\Thumbs.db" />
+    <Content Include="imagenes\6 disco duro\Thumbs.db" />
+    <Content Include="imagenes\8 memoria ram\Thumbs.db" />
+    <Content Include="imagenes\banner avanve2.ai" />
+    <Content Include="imagenes\banner.ai" />
+    <Content Include="imagenes\cables\Thumbs.db" />
+    <Content Include="imagenes\Thumbs.db" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="1\" />
+    <Folder Include="css\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:47757/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

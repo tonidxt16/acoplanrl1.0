@@ -1,0 +1,5 @@
+c:\users\juan aguilar\documents\visual studio 2012\Projects\acoplanrl1.0\acoplanrl1.0\bin\acoplanrl1.0.dll
+c:\users\juan aguilar\documents\visual studio 2012\Projects\acoplanrl1.0\acoplanrl1.0\bin\acoplanrl1.0.pdb
+c:\users\juan aguilar\documents\visual studio 2012\Projects\acoplanrl1.0\acoplanrl1.0\obj\Debug\acoplanrl1.0.csprojResolveAssemblyReference.cache
+c:\users\juan aguilar\documents\visual studio 2012\Projects\acoplanrl1.0\acoplanrl1.0\obj\Debug\acoplanrl1.0.dll
+c:\users\juan aguilar\documents\visual studio 2012\Projects\acoplanrl1.0\acoplanrl1.0\obj\Debug\acoplanrl1.0.pdb

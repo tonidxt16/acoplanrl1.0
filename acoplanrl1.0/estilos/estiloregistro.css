@@ -1,0 +1,64 @@
+ body
+        {
+            color:white;
+            font-size:17px;
+            font-family:Arial;
+        }
+
+        table
+        {
+            margin:auto;
+        } 
+
+     .titulo_tabla
+        {
+            
+            width:383px;                 
+            text-align:center;
+            background-color:#159cf6;            
+            -webkit-border-top-left-radius: 10px;
+            -webkit-border-top-right-radius: 10px;
+            -moz-border-radius-topleft: 10px;
+            -moz-border-radius-topright: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+          
+
+        .registro_tabla        
+        {
+            border: 2px solid #159cf6;            
+            text-align:center;
+            background-color:#808080;
+            height: 345px;
+            width: 383px;
+            -webkit-border-bottom-right-radius: 10px;
+            -webkit-border-bottom-left-radius: 10px;
+            -moz-border-radius-bottomright: 10px;
+            -moz-border-radius-bottomleft: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .btnregistro
+        {            
+            color:white;
+            font-family:Arial;
+            background-color:#159cf6;
+            border:inherit;
+            padding:5px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            cursor:pointer;
+        }
+        
+        .btnregistro:active
+        {
+            background-color:#42abf1;
+        }
+
+        .auto-style1
+        {
+            width: 119px;
+        }
