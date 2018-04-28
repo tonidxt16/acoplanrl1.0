@@ -481,6 +481,7 @@
     <Content Include="login.aspx" />
     <Content Include="registo_usu.aspx" />
     <Content Include="registroUsu.aspx" />
+    <Content Include="registro_asociado.aspx" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\craftyslide.js" />
@@ -538,6 +539,13 @@
     </Compile>
     <Compile Include="registroUsu.aspx.designer.cs">
       <DependentUpon>registroUsu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="registro_asociado.aspx.cs">
+      <DependentUpon>registro_asociado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registro_asociado.aspx.designer.cs">
+      <DependentUpon>registro_asociado.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
