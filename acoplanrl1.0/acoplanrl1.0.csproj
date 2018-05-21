@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="conexion.aspx" />
+    <Content Include="Copia de muypronto.aspx" />
     <Content Include="estilos\admin.css" />
     <Content Include="estilos\baner.css" />
     <Content Include="estilos\bootstrap.css" />
@@ -504,6 +505,13 @@
     </Compile>
     <Compile Include="conexion.aspx.designer.cs">
       <DependentUpon>conexion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Copia de muypronto.aspx.cs">
+      <DependentUpon>Copia de muypronto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Copia de muypronto.aspx.designer.cs">
+      <DependentUpon>Copia de muypronto.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

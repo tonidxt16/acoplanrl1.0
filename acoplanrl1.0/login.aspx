@@ -53,7 +53,7 @@
                                                 <asp:Label ID="Label1" runat="server" Text=" " Font-Size = "X-Large"></asp:Label>
                                                 
                                                 <br />
-				<p class="message">No estas registrado? <a href="registro.php">Crear una Cuenta</a></p>				
+				<p class="message">No estas registrado? <a href="registo_usu.aspx">Crear una Cuenta</a></p>				
 			                                </form>
 		</div>
 	</div>

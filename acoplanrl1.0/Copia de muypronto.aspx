@@ -208,7 +208,84 @@
 					</div><!-- //BLOG BLOCK -->
 					
 					
-					
+					<!-- SIDEBAR -->
+					<div class="sidebar col-lg-3 col-md-3 padbot50">
+						
+						<!-- META WIDGET -->
+						<div class="sidepanel widget_meta">
+							<ul>
+								<li><a href="javascript:void(0);" >Acción</a></li>
+								<li><a href="javascript:void(0);" >Moda & Tendencias</a></li>
+								<li><a href="javascript:void(0);" >Novelas</a></li>
+								<li><a href="javascript:void(0);" >Drama</a></li>
+								<li><a href="javascript:void(0);" >Ciencia</a></li>
+							</ul>
+						</div><!-- //META WIDGET -->
+						
+						
+						<!-- POPULAR POSTS WIDGET -->
+						<div class="sidepanel widget_popular_posts">
+							<h3><b>Libros</b> Populares</h3>
+							
+							<div class="recent_posts_widget clearfix">
+								<div class="post_item_img_widget">
+									<img src="images/blog/1.jpg" alt="" />
+								</div>
+								<div class="post_item_content_widget">
+									<a class="title" href="blog.html" >Las mejores historias que han sido seleccionada por nosotros</a>
+									<ul class="post_item_inf_widget">
+										<li>Febrero 10  |  21:30</li>
+									</ul>
+								</div>
+							</div>
+							<div class="recent_posts_widget clearfix">
+								<div class="post_item_img_widget">
+									<img src="images/blog/2.jpg" alt="" />
+								</div>
+								<div class="post_item_content_widget">
+									<a class="title" href="blog.html" >Cuentos clasicos que los niÃ±os adoran y no dejan de disfrutar</a>
+									<ul class="post_item_inf_widget">
+										<li>Febrero 10  |  9:30</li>
+									</ul>
+								</div>
+							</div>
+							<div class="recent_posts_widget clearfix">
+								<div class="post_item_img_widget">
+									<img src="images/blog/3.jpg" alt="" />
+								</div>
+								<div class="post_item_content_widget">
+									<a class="title" href="blog.html" >Novelas que te hacen que conoces las aventuras de estos intrepidos</a>
+									<ul class="post_item_inf_widget">
+										<li>Febrero 10  |  13:30</li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- //POPULAR POSTS WIDGET -->
+						
+						<hr>
+						
+						<!-- POPULAR TAGS WIDGET -->
+						<div class="sidepanel widget_tags">
+							<h3><b>Popular</b> Seleccion</h3>
+							<ul>
+								<li><a href="javascript:void(0);" >Moda</a></li>
+								<li><a href="javascript:void(0);" >Ciencia</a></li>
+								<li><a href="javascript:void(0);" >Comic</a></li>
+								<li><a href="javascript:void(0);" >Anime</a></li>
+								<li><a href="javascript:void(0);" >Novelas</a></li>
+								<li><a href="javascript:void(0);" >Suspenso</a></li>
+								<li><a href="javascript:void(0);" >Drama</a></li>
+							</ul>
+						</div><!-- POPULAR TAGS WIDGET -->
+						
+						<hr>
+						
+						<!-- TEXT WIDGET -->
+						<div class="sidepanel widget_text">
+							<h3><b>Sobre</b> Glosario</h3>
+							<p>Debo admitir que esta a conocer palabras que aveses nos parecen cnfusas y a clarar las dudas que muchos tenemos con esto.</p>
+						</div><!-- //TEXT WIDGET -->
+					</div><!-- //SIDEBAR -->
 				</div><!-- //ROW -->
 			</div><!-- //CONTAINER -->
 		</section><!-- //BLOG -->
@@ -219,7 +296,7 @@
 	<section id="contacts">
 	</section><!-- //CONTACTS -->
 	
-<!-- FOOTER -->         
+<!-- FOOTER -->
 	<footer>
 			
 		<!-- CONTAINER -->
