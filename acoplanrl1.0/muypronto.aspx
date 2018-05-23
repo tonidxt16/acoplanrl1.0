@@ -138,16 +138,48 @@
 					<!-- BLOG BLOCK -->
 					<div class="blog_block col-lg-9 col-md-9 padbot50">
 						
-						<!-- Glosario Inicio -->
+						<!-- Area de trabajo Inicio -->
 						<div class="single_blog_post clearfix" data-animated="fadeInUp">
 						<h1><b><center>Pangia en construccion</center></b></h1> 
     
-							<img class="ipad_img1" src="images/construccion/1.jpg" alt="" />
-							<img class="ipad_img1" src="images/construccion/2.png" alt="" />
-							<img class="ipad_img1" src="images/construccion/3.jpg" alt="" />
-							<img class="ipad_img1" src="images/construccion/4.gif" alt="" />
-							
-						</div><!-- //Fin GLOSARIO -->
+						   <form id="form2" runat="server">
+    <div>
+    
+        <asp:Label ID="Label1" runat="server" Text="Registro Usuario"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="Label2" runat="server" Text="Nombre:"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TxtNombreUsu" runat="server"></asp:TextBox>
+        <br />
+        <br />
+        <asp:Label ID="Label3" runat="server" Text="Apellido:"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TxtApellidoUsu" runat="server"></asp:TextBox>
+        <br />
+        <br />
+        <asp:Label ID="Label4" runat="server" Text="Registro Usuario:"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TxtRegistroUsu" runat="server"></asp:TextBox>
+        <br />
+        <br />
+        <asp:Label ID="Label5" runat="server" Text="Password:"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TxtPassUsu" runat="server" TextMode="Password"></asp:TextBox>
+        <br />
+        <br />
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="BtnAceptarUsu" runat="server" OnClick="BtnAceptarUsu_Click" Text="Aceptar" />
+        <br />
+        <br />
+         <br />
+        <br /><asp:Label ID="Label10" runat="server" Text=" " Font-Size = "X-Large"></asp:Label>
+        <br />
+    
+    </div>
+    </form>
+						</div><!-- //Fin Area de Trabajo -->
 						
 						<hr>
 						
@@ -208,84 +240,8 @@
 					</div><!-- //BLOG BLOCK -->
 					
 					
-					<!-- SIDEBAR -->
-					<div class="sidebar col-lg-3 col-md-3 padbot50">
-						
-						<!-- META WIDGET -->
-						<div class="sidepanel widget_meta">
-							<ul>
-								<li><a href="javascript:void(0);" >Acción</a></li>
-								<li><a href="javascript:void(0);" >Moda & Tendencias</a></li>
-								<li><a href="javascript:void(0);" >Novelas</a></li>
-								<li><a href="javascript:void(0);" >Drama</a></li>
-								<li><a href="javascript:void(0);" >Ciencia</a></li>
-							</ul>
-						</div><!-- //META WIDGET -->
-						
-						
-						<!-- POPULAR POSTS WIDGET -->
-						<div class="sidepanel widget_popular_posts">
-							<h3><b>Libros</b> Populares</h3>
-							
-							<div class="recent_posts_widget clearfix">
-								<div class="post_item_img_widget">
-									<img src="images/blog/1.jpg" alt="" />
-								</div>
-								<div class="post_item_content_widget">
-									<a class="title" href="blog.html" >Las mejores historias que han sido seleccionada por nosotros</a>
-									<ul class="post_item_inf_widget">
-										<li>Febrero 10  |  21:30</li>
-									</ul>
-								</div>
-							</div>
-							<div class="recent_posts_widget clearfix">
-								<div class="post_item_img_widget">
-									<img src="images/blog/2.jpg" alt="" />
-								</div>
-								<div class="post_item_content_widget">
-									<a class="title" href="blog.html" >Cuentos clasicos que los niÃ±os adoran y no dejan de disfrutar</a>
-									<ul class="post_item_inf_widget">
-										<li>Febrero 10  |  9:30</li>
-									</ul>
-								</div>
-							</div>
-							<div class="recent_posts_widget clearfix">
-								<div class="post_item_img_widget">
-									<img src="images/blog/3.jpg" alt="" />
-								</div>
-								<div class="post_item_content_widget">
-									<a class="title" href="blog.html" >Novelas que te hacen que conoces las aventuras de estos intrepidos</a>
-									<ul class="post_item_inf_widget">
-										<li>Febrero 10  |  13:30</li>
-									</ul>
-								</div>
-							</div>
-						</div><!-- //POPULAR POSTS WIDGET -->
-						
-						<hr>
-						
-						<!-- POPULAR TAGS WIDGET -->
-						<div class="sidepanel widget_tags">
-							<h3><b>Popular</b> Seleccion</h3>
-							<ul>
-								<li><a href="javascript:void(0);" >Moda</a></li>
-								<li><a href="javascript:void(0);" >Ciencia</a></li>
-								<li><a href="javascript:void(0);" >Comic</a></li>
-								<li><a href="javascript:void(0);" >Anime</a></li>
-								<li><a href="javascript:void(0);" >Novelas</a></li>
-								<li><a href="javascript:void(0);" >Suspenso</a></li>
-								<li><a href="javascript:void(0);" >Drama</a></li>
-							</ul>
-						</div><!-- POPULAR TAGS WIDGET -->
-						
-						<hr>
-						
-						<!-- TEXT WIDGET -->
-						<div class="sidepanel widget_text">
-							<h3><b>Sobre</b> Glosario</h3>
-							<p>Debo admitir que esta a conocer palabras que aveses nos parecen cnfusas y a clarar las dudas que muchos tenemos con esto.</p>
-						</div><!-- //TEXT WIDGET -->
-					</div><!-- //SIDEBAR -->
+					
+					
 				</div><!-- //ROW -->
 			</div><!-- //CONTAINER -->
 		</section><!-- //BLOG -->

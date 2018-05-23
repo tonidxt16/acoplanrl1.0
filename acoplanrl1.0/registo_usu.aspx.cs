@@ -19,16 +19,15 @@ namespace acoplanrl1._0
         {
             try
             {
-                string cadena = "Data Source=TONIDXT16;Initial Catalog=Cp2;Integrated Security=True";
+                string cadena = "Data Source=DESKTOP-DRIFIIJ\\SERVER;Initial Catalog=Cooperativa4;Integrated Security=True; Pwd=123;User ID=sa";
                 SqlConnection con = new SqlConnection(cadena);
                 con.Open();
                 string nombre = TxtNombreUsu.Text;
-                string apellido = TxtApellidoUsu.Text;
                 string registroUsu = TxtRegistroUsu.Text;
                 string passUsu = TxtPassUsu.Text;
 
 
-                string qry = "insert into Usuario (Nombre,Apellido,RegistroUsuario,Password) values ('"+nombre+"', '"+apellido+"', '"+registroUsu+"', '"+passUsu+"')";
+                string qry = "insert into Usuario (Name,RegistroUsuario,Password) values ('"+nombre+"', '"+registroUsu+"', '"+passUsu+"')";
                 SqlCommand cmd = new SqlCommand(qry, con);
                 SqlDataReader sdr = cmd.ExecuteReader();
                 if (sdr.Read())

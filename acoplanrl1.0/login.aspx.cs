@@ -8,6 +8,7 @@ using System.Web.UI.WebControls;
 
 
 
+
 namespace acoplanrl1._0
 {
     public partial class login : System.Web.UI.Page
@@ -20,14 +21,14 @@ namespace acoplanrl1._0
         protected void Button1_Click(object sender, EventArgs e)
         
             {  
-                try{  
-                         string cadena = "Data Source=TONIDXT16;Initial Catalog=Cp2;Integrated Security=True";
+                try{
+                    string cadena = ("Data Source=DESKTOP-DRIFIIJ\\SERVER;Initial Catalog=Cooperativa4;Integrated Security=True; Pwd=123;User ID=sa");
                          SqlConnection con = new SqlConnection(cadena);
                          con.Open();
                          string id = nombretxt.Text;  
-                            string pass = contratxt.Text;  
-         
-                         string qry = "select * from Usuario where Nombre='" + id + "' and Password='" + pass + "'";  
+                            string pass = contratxt.Text;
+
+                            string qry = "select * from Usuario where RegistroUsuario='" + id + "' and Password='" + pass + "'";  
                          SqlCommand cmd = new SqlCommand(qry,con);  
                          SqlDataReader sdr = cmd.ExecuteReader();  
                          if(sdr.Read())  
