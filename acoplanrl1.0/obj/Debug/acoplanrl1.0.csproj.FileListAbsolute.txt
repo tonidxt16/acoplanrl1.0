@@ -8,3 +8,5 @@ C:\Users\Equipo\Documents\GitHub\acoplanrl1.0\acoplanrl1.0\bin\acoplanrl1.0.pdb
 C:\Users\Equipo\Documents\GitHub\acoplanrl1.0\acoplanrl1.0\obj\Debug\acoplanrl1.0.csprojResolveAssemblyReference.cache
 C:\Users\Equipo\Documents\GitHub\acoplanrl1.0\acoplanrl1.0\obj\Debug\acoplanrl1.0.dll
 C:\Users\Equipo\Documents\GitHub\acoplanrl1.0\acoplanrl1.0\obj\Debug\acoplanrl1.0.pdb
+C:\Users\Equipo\Documents\GitHub\acoplanrl1.0\acoplanrl1.0\obj\Debug\RdlCompile.cache
+C:\Users\Equipo\Documents\GitHub\acoplanrl1.0\acoplanrl1.0\obj\Debug\RdlCompile.compiled

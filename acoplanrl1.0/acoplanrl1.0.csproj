@@ -39,6 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -498,6 +499,7 @@
     <Content Include="scripts\scriptmenu.js" />
     <Content Include="scripts\validar.js" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="conexion.aspx.cs">
@@ -506,6 +508,11 @@
     </Compile>
     <Compile Include="conexion.aspx.designer.cs">
       <DependentUpon>conexion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cooperativa4DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cooperativa4DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Copia de muypronto.aspx.cs">
       <DependentUpon>Copia de muypronto.aspx</DependentUpon>
@@ -556,6 +563,13 @@
     </Compile>
     <Compile Include="registro_asociado.aspx.designer.cs">
       <DependentUpon>registro_asociado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -622,6 +636,17 @@
     <Content Include="imagenes\banner.ai" />
     <Content Include="imagenes\cables\Thumbs.db" />
     <Content Include="imagenes\Thumbs.db" />
+    <Content Include="Cooperativa4DataSet.xsc">
+      <DependentUpon>Cooperativa4DataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Cooperativa4DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cooperativa4DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Cooperativa4DataSet.xss">
+      <DependentUpon>Cooperativa4DataSet.xsd</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -632,6 +657,9 @@
   <ItemGroup>
     <Folder Include="1\" />
     <Folder Include="css\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report1.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
