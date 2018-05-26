@@ -55,7 +55,7 @@ namespace acoplanrl1._0
 
         protected void CalendarioNacimiento_SelectionChanged(object sender, EventArgs e)
         {
-            txtFechaNacimiento.Text = CalendarioNacimiento.SelectedDate.ToString("yyy-mm-dd");
+            txtFechaNacimiento.Text = CalendarioNacimiento.SelectedDate.ToString("yyy-MM-dd");
             CalendarioNacimiento.Visible = false;
         }
 
@@ -76,7 +76,7 @@ namespace acoplanrl1._0
 
         protected void CalendarioIngreso_SelectionChanged(object sender, EventArgs e)
         {
-            txtFechaIngreCoo.Text = CalendarioIngreso.SelectedDate.ToString("yyy-mm-dd");
+            txtFechaIngreCoo.Text = CalendarioIngreso.SelectedDate.ToString("yyy-MM-dd");
             CalendarioIngreso.Visible = false;
 
         }
@@ -96,7 +96,7 @@ namespace acoplanrl1._0
 
         protected void CalendarioRet_SelectionChanged(object sender, EventArgs e)
         {
-            txtFechaRetiro.Text = CalendarioRet.SelectedDate.ToString("yyy-mm-dd");
+            txtFechaRetiro.Text = CalendarioRet.SelectedDate.ToString("yyy-MM-dd");
             CalendarioRet.Visible = false;
 
         }
@@ -128,10 +128,10 @@ namespace acoplanrl1._0
                 string domicilio = txtDomicilioA.Text;
                 string municipio2 = txtMunicipioD.Text;
                 string departamento2 = txtDepartamentoD.Text;
-                string profecion = txtProfecionA.Text;
-                string direccionLab = txtDirecLab.Text;
-                string municipioLab = txtMunicipioLab.Text;
-                string departamentoLab = txtDepartamentoLab.Text;
+                string profecion = txtProfecionA.Text;//este
+                string direccionLab = txtDirecLab.Text;//este
+                string municipioLab = txtMunicipioLab.Text;//este
+                string departamentoLab = txtDepartamentoLab.Text;//y este
                 int telefonoTrabajo = Int32.Parse(txtTelTra.Text);
                 int telefonoPersonal = Int32.Parse(txtTelPersonal.Text);
                 string cargo = txtCargoA.Text;
@@ -141,19 +141,30 @@ namespace acoplanrl1._0
                 string fechaIngre = txtFechaIngreCoo.Text;
                 string fechaRenun = txtFechaRetiro.Text;
                 string causaRet = txtMotivoRetiro.Text;
-                string cantPerso = txtdependen.Text;
+                int cantPerso = Int32.Parse(txtdependen.Text);
+          
 
 
-                string qry = "insert into Asociado ([IdUser],[NombresAsociado],[ApellidosAsociado],[Dui],[ExtendidoEn],[FechaExtencion],[LugarNacimiento],[Municipio],[Departamento],[FechaNacimiento],[Nacionalidad],[sexo],[EstadoCivil],[Edad],[Email],[Domicilio],[MunicipioDomicilio],[DepartamentoDomicilio],[ProfesionOficio],[DireccionLaboral],[MunicipioLaboral],[DepartamentoLaboral],[TelefonoTrabajo],[TelefonoPersonal],[CargoPuesto],[Salario],[UbicacionOficina],[NumeroCuenta],[FechaIngresoCooperativa],[FechaRenunciaSeparacionExcusion],[CausaMotivo],[CantidadPersonasDependientes]) values ('" + iduser + "', '" + nombres + "', '" + apellidos + "',"+dui+",'"+FechaExtencion+"','"+LugarNac+"','"+municipio+"','"+departamento+"','"+fechaNaci+"','"+nacionalidad+"','"+sexo+"','"+estadoCivil+"',"+edad+",'"+email+"','"+domicilio+"','"+municipio2+"','"+departamento2+"',"+telefonoTrabajo+","+telefonoPersonal+",'"+cargo+"',"+salario+",'"+ubicacionOfi+"',"+numCuenta+",'"+fechaIngre+"','"+fechaRenun+"','"+causaRet+"',"+cantPerso+")";
+
+
+                string qry = "insert into Asociado ([IdUser],[NombresAsociado],[ApellidosAsociado],[Dui],[ExtendidoEn],[FechaExtencion],[LugarNacimiento],[Municipio],[Departamento],[FechaNacimiento],[Nacionalidad],[sexo],[EstadoCivil],[Edad],[Email],[Domicilio],[MunicipioDomicilio],[DepartamentoDomicilio],[ProfesionOficio],[DireccionLaboral],[MunicipioLaboral],[DepartamentoLaboral],[TelefonoTrabajo],[TelefonoPersonal],[CargoPuesto],[Salario],[UbicacionOficina],[NumeroCuenta],[FechaIngresoCooperativa],[FechaRenunciaSeparacionExcusion],[CausaMotivo],[CantidadPersonasDependientes]) values                ('" + iduser + "', '" + nombres + "', '" + apellidos + "'," + dui + ",'" + extendido + "','" + FechaExtencion + "','" + LugarNac + "','" + municipio + "','" + departamento + "','" + fechaNaci + "','" + nacionalidad + "','" + sexo + "','" + estadoCivil + "'," + edad + ",'" + email + "','" + domicilio + "','" + municipio2 + "','" + departamento2 + "','" + profecion + "','" + direccionLab + "','" + municipioLab + "','" + departamentoLab + "'," + telefonoTrabajo + "," + telefonoPersonal + ",'" + cargo + "'," + salario + ",'" + ubicacionOfi + "'," + numCuenta + ",'" + fechaIngre + "','" + fechaRenun + "','" + causaRet + "'," + cantPerso + ")";
+                                                    //1         2               3                   4       5               6               7                   8           9               10              11          12      13          14      15      16          17                      18                      19                  20              21                  22                  23                  24                     25       26            27            28              29                          30                                31            32                            33                        1               2                   3               4               5                   6                           7               8                   9                       10                  11                  12              13                  14              15              16                  17                  18                      19                  20                      21                      22                      23                          24                  25              26              27                      28                  29                  30                  31                  32  
                 SqlCommand cmd = new SqlCommand(qry, con);
                 SqlDataReader sdr = cmd.ExecuteReader();
                 if (sdr.Read())
                 {
-                    Label10.Text = "!!! Error al registrar !!!";
+                   
+
+                    string script = "alert('Error al registrar');";
+
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
+
                 }
                 else
                 {
-                    Label10.Text = "!!! Registro Exitoso !!!";
+                    string script = "alert('Registro Exitoso');";
+
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
 
 
                 }
