@@ -466,6 +466,8 @@
     <Content Include="images\works\7_2.jpg" />
     <Content Include="images\zoom.png" />
     <Content Include="images\zoom_h.png" />
+    <Content Include="image\calendarioimg.jpg" />
+    <Content Include="image\calendarioimg2.jpg" />
     <Content Include="image\header.png" />
     <Content Include="index.aspx" />
     <Content Include="indexAdmin.aspx" />
@@ -480,7 +482,6 @@
     <Content Include="js\owl.carousel.js" />
     <Content Include="js\superfish.min.js" />
     <Content Include="login.aspx" />
-    <Content Include="muypronto.aspx" />
     <Content Include="registo_usu.aspx" />
     <Content Include="registroUsu.aspx" />
     <Content Include="registro_asociado.aspx" />
@@ -533,13 +534,6 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="muypronto.aspx.cs">
-      <DependentUpon>muypronto.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="muypronto.aspx.designer.cs">
-      <DependentUpon>muypronto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="registo_usu.aspx.cs">
