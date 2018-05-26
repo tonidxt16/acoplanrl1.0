@@ -101,13 +101,16 @@ namespace acoplanrl1._0
 
         }
 
-        protected void BtnAceptarUsu_Click(object sender, EventArgs e)
+     
+
+        protected void Button1_Click(object sender, EventArgs e)
         {
             try
             {
                 string cadena = "Data Source=DESKTOP-DRIFIIJ\\SERVER;Initial Catalog=Cooperativa4;Integrated Security=True; Pwd=123;User ID=sa";
                 SqlConnection con = new SqlConnection(cadena);
                 con.Open();
+                int iduser = Int32.Parse(txtidUser.Text);
                 string nombres = txtNombreA.Text;
                 string apellidos = txtApellidosA.Text;
                 int dui = Int32.Parse(txtDuiA.Text);
@@ -139,25 +142,9 @@ namespace acoplanrl1._0
                 string fechaRenun = txtFechaRetiro.Text;
                 string causaRet = txtMotivoRetiro.Text;
                 string cantPerso = txtdependen.Text;
-                int iduser = Int32.Parse(txtidUser.Text);
 
 
-
-
-
-
-
-
-
-
-
-
-         
-                
-                
-
-
-                string qry = "insert into Usuario (Name,RegistroUsuario,Password) values ('" + nombre + "', '" + registroUsu + "', '" + passUsu + "')";
+                string qry = "insert into Asociado ([IdUser],[NombresAsociado],[ApellidosAsociado],[Dui],[ExtendidoEn],[FechaExtencion],[LugarNacimiento],[Municipio],[Departamento],[FechaNacimiento],[Nacionalidad],[sexo],[EstadoCivil],[Edad],[Email],[Domicilio],[MunicipioDomicilio],[DepartamentoDomicilio],[ProfesionOficio],[DireccionLaboral],[MunicipioLaboral],[DepartamentoLaboral],[TelefonoTrabajo],[TelefonoPersonal],[CargoPuesto],[Salario],[UbicacionOficina],[NumeroCuenta],[FechaIngresoCooperativa],[FechaRenunciaSeparacionExcusion],[CausaMotivo],[CantidadPersonasDependientes]) values ('" + iduser + "', '" + nombres + "', '" + apellidos + "',"+dui+",'"+FechaExtencion+"','"+LugarNac+"','"+municipio+"','"+departamento+"','"+fechaNaci+"','"+nacionalidad+"','"+sexo+"','"+estadoCivil+"',"+edad+",'"+email+"','"+domicilio+"','"+municipio2+"','"+departamento2+"',"+telefonoTrabajo+","+telefonoPersonal+",'"+cargo+"',"+salario+",'"+ubicacionOfi+"',"+numCuenta+",'"+fechaIngre+"','"+fechaRenun+"','"+causaRet+"',"+cantPerso+")";
                 SqlCommand cmd = new SqlCommand(qry, con);
                 SqlDataReader sdr = cmd.ExecuteReader();
                 if (sdr.Read())
@@ -176,6 +163,7 @@ namespace acoplanrl1._0
             {
                 Response.Write(ex.Message);
             }
+
         }
 
                 
